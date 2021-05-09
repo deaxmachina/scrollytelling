@@ -1,0 +1,69 @@
+/* #################################################################################################### */
+/* These are just styles for the page content, they have nothing to do with the scrolling or animations */
+/* #################################################################################################### */
+:root {
+  --red: #e84750;
+  --orange: #f5a336;
+  --yellow: #ffdb00;
+  --green: #54ae37;
+  --blue: #00a8de;
+  --purple: #854794;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 10;
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* styles for the scrolling text boxes */
+.active {
+  opacity: 1 !important;
+}
+
+
+/* For the graphs -- we want them to be positioned on top of each other */
+/* Main container for the chart and text */
+#chart-and-steps{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#chart-wrapper {
+  position: relative;
+  height: 100vh;
+  flex-grow: 10;
+}
+
+#scroll-steps {
+  flex-grow: 1;
+}
+
+
+.rectangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+#graph-1 {
+  background-color: red;
+}
+
+#graph-2 {
+  background-color: green;
+}
+
+#graph-3 {
+  background-color: blue;
+}
+
+/* Styles for the info boxes */
+.step {
+  margin-bottom: 70vh;
+  opacity: 0.2;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css" />
+  <title>Sticky Side</title>
+</head>
+<body>
+  <h1 class="random-text">
+    This is just some text filler to get a better idea of how it could look in reality, where you would probably have something first before
+    getting to the start of the scrollytelling. 
+  </h1>
+  
+  <section id="scrolly-container">
+
+    <article>
+      <div class="step" data-step="1">
+        <p>
+          We start with some simple chart. Here we just have some random circles inside 
+          the sticky graph container. The first step shows their initial arrangement. 
+          The size of the text container should be as big as the text inisde it, rather than 
+          a fixed size, or varying only dependent on the screeen size. 
+        </p>
+      </div>
+      <div class="step" data-step="2">
+        <p>
+          For the second step, we want something to change in the graph. For example, we show the 
+          same data for a different subset, or different year, etc. The important point is, the 
+          graph is the same and only the attributes of the element and/or the data is changing. 
+          Here we just vary the radius.
+        </p>
+      </div>
+      <div class="step" data-step="3">
+        <p>
+          For the third step, we want to re-arrange the graph. Here we move the circles to the bottom 
+          and change the radius. This is supposed to be a different graph. How could we make a 
+          more complex one..?
+        </p>
+      </div>
+      <div class="step" data-step="4">
+        <p>
+          Some random last step. Here we move the graph back to its original arrangement.
+        </p>
+      </div>
+    </article>
+
+    <figure>
+      <div id="graph-wrapper"></div>
+    </figure>
+
+  </section>
+
+  <h1 class="random-text">
+    This is just some text filler to get a better idea of how it could look in reality, where you would probably have something 
+    at the end of the scrollytelling as well. 
+  </h1>
+
+  <script src="https://unpkg.com/intersection-observer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/stickyfill/2.1.0/stickyfill.js" integrity="sha512-X2OBxY/6jxNWXe+TJSeF64SxexVkNfY3LROgqr7Mcvc8RBIEEp1gShn698ubOKrFbeSQknje5XoEZz+ZUGOzIw==" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/scrollama"></script>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

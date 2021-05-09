@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#scrolly {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: #f3f3f3;
+  padding: 0 20px;
+}
+
+/**************************************/
+/*************** Figure ***************/
+/**************************************/
+/* container for the sticky graph - stick inside the scrolly container */
+figure {
+  position: sticky;
+  top: 100px; /* manually set 100 from top of the container */
+  height: 400px;
+  width: 400px;
+  margin: 0;
+  transform: translate3d(0, 0, 0);
+  background-color: #8a8a8a;
+  z-index: 0;
+}
+
+/* wrapper for the graph */
+#graph-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+
+/**************************************/
+/*************** Steps ****************/
+/**************************************/
+/* the container for all the text steps */
+article {
+  position: relative;
+  padding: 0 20px;
+  max-width: 400px;
+}
+/* text steps */
+.step {
+  margin: 0 auto 400px auto; /* increase the bottom margin to give time to scroll untile the next graph */
+  background-color: #3b3b3b;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+/* only the last step should have no margin on the bottom */
+.step:last-child {
+  margin-bottom: 0;
+}
+
+/* styles to apply when the current step is active */
+.step.is-active {
+  background-color: goldenrod;
+  color: #3b3b3b;
+}
+
+/* style for the text before and after the scrollytelling part */
+.random-text {
+  width: 400px;
+  margin: 150px auto;
+  font-weight: 300;
+}

@@ -1,0 +1,68 @@
+/* #################################################################################################### */
+/* These are just styles for the page content, they have nothing to do with the scrolling or animations */
+/* #################################################################################################### */
+:root {
+  --red: #e84750;
+  --orange: #f5a336;
+  --yellow: #ffdb00;
+  --green: #54ae37;
+  --blue: #00a8de;
+  --purple: #854794;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* styles for the SVG chart */
+svg {
+  margin: 10px;
+}
+
+#chart-wrapper {
+  width: 60%;
+  margin-left: 40%;
+  border: 3px solid black;
+}
+
+/* styles for the scrolling text boxes */
+.active {
+  opacity: 1 !important;
+}
+
+.step {
+  font-family: 'Nunito Sans';
+  width: 30%;
+  padding: 20px;
+  margin-right: 70%;
+  margin-left: 30px;
+  margin-bottom: 70vh;
+  border: 5px solid purple;
+  border-radius: 20px;
+  opacity: 0.2;
+}
+
+h1 {
+  font-family: 'Bungee', sans-serif;
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 6rem;
+}
+
+p {
+  font-family: 'Nunito Sans', sans-serif;
+  max-width: 700px;
+  line-height: 1.4em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  opacity: 0;
+}
