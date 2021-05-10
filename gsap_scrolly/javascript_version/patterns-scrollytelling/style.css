@@ -1,0 +1,57 @@
+:root {
+  --red: #e84750;
+  --orange: #f5a336;
+  --yellow: #ffdb00;
+  --green: #54ae37;
+  --blue: #00a8de;
+  --purple: #854794;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 0;
+}
+
+body, * {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  margin: auto 50px;
+}
+
+/* styles for the SVG chart */
+svg {
+  /*margin: 20px;*/
+}
+#chart-wrapper {
+  width: 60%;
+  margin-left: 40%;
+  border: 1px solid black;
+}
+
+/* styles for the scrolling text boxes */
+.active {
+  opacity: 1 !important;
+}
+
+.step {
+  font-family: 'Nunito Sans';
+  width: 30%;
+  padding: 20px;
+  margin-right: 70%;
+  margin-bottom: 60vh; /* this is how you give each step more height */
+  border: 5px solid purple;
+  border-radius: 20px;
+  opacity: 0.2;
+}
+
+/* reduce the bottom margin of just the last step */
+.step:last-of-type {
+  margin-bottom: 100px;
+}
+

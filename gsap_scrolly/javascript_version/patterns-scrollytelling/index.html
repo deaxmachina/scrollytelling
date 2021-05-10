@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <title>Patterns in Scrollytelling with GSAP</title>
+</head>
+<body>
+  <h1>Patterns in Scrollytelling with GSAP</h1>
+  <p>
+    Here is some text to push the chart a little lower so that we can 
+    witness the pinning of the chart which happens when its center hits the 
+    center of the viewport.
+    Here is some text to push the chart a little lower so that we can 
+    witness the pinning of the chart which happens when its center hits the 
+    center of the viewport.
+    Here is some text to push the chart a little lower so that we can 
+    witness the pinning of the chart which happens when its center hits the 
+    center of the viewport.
+  </p>
+
+  <div class="wrapper">
+    <div id="chart-wrapper">
+      <svg></svg>
+    </div>
+  
+    <article id="scroll-steps">
+      <section class="step" id="step-1">
+        This is the first section. 
+      </section>
+      <section class="step" id="step-2">
+        This is the second section. 
+      </section>
+      <section class="step" id="step-3">
+        This is the third section. 
+      </section>
+      <section class="step" id="step-4">
+        This is the fourth section
+      </section>
+    </article>
+  </div>
+
+  <p>
+    This is some filler text so that we can see the behaviour of the page 
+    after we have exited the section which contains the sticky graph and the 
+    text and the whole scrolly piece. 
+    This is some filler text so that we can see the behaviour of the page 
+    after we have exited the section which contains the sticky graph and the 
+    text and the whole scrolly piece. 
+    This is some filler text so that we can see the behaviour of the page 
+    after we have exited the section which contains the sticky graph and the 
+    text and the whole scrolly piece. 
+    This is some filler text so that we can see the behaviour of the page 
+    after we have exited the section which contains the sticky graph and the 
+    text and the whole scrolly piece. 
+  </p>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/MotionPathPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

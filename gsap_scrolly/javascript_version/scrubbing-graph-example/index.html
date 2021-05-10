@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href="style.css">
+  <title>Scrubbing with a graph</title>
+</head>
+<body>
+
+  <p class='filler'>
+    There is some stuff going on before we enter the element that we want to animate and scrub. \    There is some stuff going on before we enter the element that we want to animate and scrub. 
+    There is some stuff going on before we enter the element that we want to animate and scrub. 
+    There is some stuff going on before we enter the element that we want to animate and scrub. 
+    There is some stuff going on before we enter the element that we want to animate and scrub. 
+    There is some stuff going on before we enter the element that we want to animate and scrub. 
+  </p>
+
+  <!--
+  <section class="panel">
+    <p>
+      <span class="line"></span>
+      This orange panel gets pinned when its top edge hits the top 
+      of the viewport, then the line's animation is linked with the 
+      scroll position until it has traveled 100% of the viewport's 
+      height (<code>end: "+=100%"</code>), then the orange panel is 
+      unpinned and normal scrolling resumes. Padding is added 
+      automatically to push the rest of the content down so that 
+      it catches up with the scroll when it unpins. You can set 
+      <code>pinSpacing: false</code> to 
+      prevent that if you prefer.
+    </p>
+  </section>
+  -->
+
+  <section class="panel">
+    <div id="graph-wrapper"></div>
+  </section>
+
+  <p class='filler'>
+    There is some stuff going on before we enter the element that we want to animate and scrub. \    There is some stuff going on before we enter the element that we want to animate and scrub. 
+    There is some stuff going on before we enter the element that we want to animate and scrub. 
+    There is some stuff going on before we enter the element that we want to animate and scrub. 
+    There is some stuff going on before we enter the element that we want to animate and scrub. 
+    There is some stuff going on before we enter the element that we want to animate and scrub. 
+  </p>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/MotionPathPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

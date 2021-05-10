@@ -1,0 +1,66 @@
+:root {
+  --red: #e84750;
+  --orange: #f5a336;
+  --yellow: #ffdb00;
+  --green: #54ae37;
+  --blue: #00a8de;
+  --purple: #854794;
+}
+
+body, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.random-text {
+  margin: 100px;
+}
+
+/* styles for the scrubbing animation */
+.scrub-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  pointer-events: none;
+  background-color: #ebebeb;
+}
+/* place all the texts on top of each other */
+.stack {
+  position: absolute;
+  display: block;
+}
+
+.red {
+  color: var(--red);
+}
+.orange {
+  color: var(--orange);
+}
+.yellow {
+  color: var(--yellow);
+}
+.green {
+  color: var(--green);
+}
+.blue {
+  color: var(--blue);
+}
+.purple {
+  color: var(--purple);
+}
