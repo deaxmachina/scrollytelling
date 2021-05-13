@@ -52,36 +52,31 @@ function handleStepEnter(response) {
   step.classed("is-active", (d, i) => i === response.index)
 
   // 2. Change the graph separately for each step
-  if (response.index === 0) {
-    circles
+   updateVis(response.index);
+}
+
+function updateVis(stepIndex) {
+      circles
       .transition().duration(1000)
         .attr("cx", d => d.x)
-        .attr("cy", d => d.y)
-        .attr("r", d => d.value)
+        .attr("cy", d => adjustYValue(stepIndex, d.y))
+        .attr("r", d => adjustRadius(stepIndex, d.value))
         .attr("fill", d => d.fill)
-  } else if (response.index === 1) {
-    circles
-    .transition().duration(1000)
-      .attr("cx", d => d.x)
-      .attr("cy", d => d.y)
-      .attr("r", d => d.value*1.5) /* radius changes */
-      .attr("fill", d => d.fill)
-  } else if (response.index === 2) {
-    circles
-    .transition().duration(500)
-      .attr("cx", d => d.x)
-      .attr("cy", 350) /* push them to the bottom */
-      .attr("r", d => 20) /* radius changes to fixed */
-      .attr("fill", d => d.fill)
-  } else {
-    circles
-    .transition().duration(1000)
-      .attr("cx", d => d.x)
-      .attr("cy", d => d.y)
-      .attr("r", d => d.value)
-      .attr("fill", d => d.fill)
   }
-}
+
+  function adjustRadius(stepIndex, value) {
+    if (stepIndex === 1) {
+      return value * 1.5;
+    }
+    if (stepIndex === 2) {
+      return 20;
+    }
+    return value;
+  }
+
+  function adjustYValue(stepIndex, value) {
+    return (stepIndex === 2) ? 350 : value;
+  }
 
 // main function to call scroller
 function init() {
