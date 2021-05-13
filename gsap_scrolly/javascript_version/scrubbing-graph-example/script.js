@@ -25,7 +25,7 @@ const graph = graphContainer.selectAll(".circle")
     .attr("cx", (d, i) => 40*i + 40)
     .attr("cy", (d, i) => 40*i + 40)
     .attr("fill", 'palevioletred')
-    .attr("opacity", (d, i) => i < 3 ? 1 : 0) // only show the first 3 circles
+    .attr("opacity", (d, i) => i < 1 ? 1 : 0) // only show the first 1 circle
 
 /*
 // attempt at creating a function for the graph depenedent on the data 
@@ -53,14 +53,15 @@ gsap.to(".circle", {
     scrub: true,
     pin: true,
     start: "top top", 
-    end: "+=200%", 
+    end: "+=300%", 
     markers: true,
   },
   attr: { 
     //r: i => 10*(i+1), // i is the index for the array of elements with class 'circle'
     opacity: 1
   },
-  ease: 'power.3.out'
+  ease: 'power.3.out',
+  stagger: 0.25 // this is how you can get the circles to come in one after the other
 });
 
 
